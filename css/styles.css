@@ -1,3 +1,23 @@
+body, h1, h2 {
+    font-family: 'Advent Pro';
+}
 .receipt {
   display: none;
+}
+
+#pigpic, #bearpic, #birdpic {
+  height: 200px;
+  width: 200px;
+}
+
+label {
+  font-size: 26px;
+}
+
+p {
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
 }
