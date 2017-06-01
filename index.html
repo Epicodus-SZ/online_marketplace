@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/scripts.js"></script>
     <title>Beanie Baby Black Market</title>
   </head>
   <body>
-    <h1>Beanie Babies R Us</h1>
-    
+    <div class="container">
+      <h1>Beanie Babies R Us</h1>
+      <form id="survey">
+        <!-- Radio item -->
+        <h2>Pick a rare Beanie Baby:</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="bear" checked>
+            Bear
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="pig">
+            Pig
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="animal" value="cat">
+            Cat
+          </label>
+        </div>
+        <!-- Color item -->
+        <div class="form-group">
+          <label for="color">Choose a custom color:</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <!-- Form item -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+
+        <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <div class="receipt">
+        <h2>Thank you!</h2>
+        <p>Thank you for shopping with us, <span class="name"></span>
+        <p>Your <span class="animal"></span> is being shipped to:</p>
+        <p><span class="address"></span>
+
+      </div>
+    </div>
   </body>
 </html>
